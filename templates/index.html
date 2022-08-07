@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='/styles.css') }}"> -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>App Name</h1>
+        <div class="header-spans">
+            <span id="start">Start</span>
+            <span id="stop">Stop</span>
+            <span>Help</span>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="wlan">
+            <h3>Networks: <span id="num-wlans">0</span></h3>
+            <div class="scrolling">
+                <table class="wlan-table">
+                    <thead>
+                        <tr>
+                            <th>BSSID</th>
+                            <th>Client</th>
+                            <th>Client Resolved</th>
+                            <th>Signal Strength</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="grey-row">
+                            <td>yy:tt:rr:22:cc:33</td>
+                            <td>aa:11:bb:Alphabet</td>
+                            <td>aa:11:bb:22:cc:33</td>
+                            <td>-50dBm</td>
+                            <td>5100MHz</td>
+                        </tr>
+                        <tr>
+                            <td>yy:tt:rr:22:cc:33</td>
+                            <td>aa:11:bb:Alphabet</td>
+                            <td>aa:11:bb:22:cc:33</td>
+                            <td>-50dBm</td>
+                            <td>5100MHz</td>
+                        </tr>
+                        <tr class="grey-row">
+                            <td>yy:tt:rr:22:cc:33</td>
+                            <td>aa:11:bb:Alphabet</td>
+                            <td>aa:11:bb:22:cc:33</td>
+                            <td>-50dBm</td>
+                            <td>5100MHz</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="probing">
+            <h3>Probing Clients: <span id="num-probing">0</span></h3>
+            <div class="scrolling">
+                <table class="probing-table">
+                    <thead>
+                        <tr>
+                            <th>Client</th>
+                            <th>Client Resolved</th>
+                            <th>Signal Strength</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="grey-row">
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr class="grey-row">
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr class="grey-row">
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr> -->
+                        <!-- <tr class="grey-row">
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr class="grey-row">
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr class="grey-row">
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr class="grey-row">
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr>
+                        <tr class="grey-row">
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>aa:bb:cc:11:22:33</td>
+                            <td>-70dBm</td>
+                            <td>2400MHz</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-links">
+            <a href="https://github.com/BenLaRock" target="_blank">My GitHub</a>
+            <a href="https://www.wireshark.org/docs/man-pages/tshark.html" target="_blank">Tshark Manual</a>
+            <a href="https://www.oreilly.com/library/view/80211-wireless-networks/0596100523/ch04.html"
+                target="_blank">About Wi-Fi
+                Frames</a>
+            <a href="https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036" target="_blank">Learn
+                Python</a>
+            <a href="https://flask.palletsprojects.com/en/2.1.x/" target="_blank">Get Flask</a>
+        </div>
+    </div>
+    <!-- <script src="{{ url_for('static',filename='/script.js') }}"></script> -->
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

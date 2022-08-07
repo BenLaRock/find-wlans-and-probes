@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dddddd;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div.header {
+    background-color: #ffffffff;
+    width: 100%;
+    height: 8%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.header h1 {
+    width: 80%;
+    padding-left: 50px;
+    color: #292929;
+    font-weight: 550;
+}
+
+div.header-spans {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 20%;
+    text-align: center;
+    color: #555555;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+div.header-spans span:hover {
+    cursor: pointer;
+    color: #292929;
+    border-bottom: 1px solid #292929;
+    width: auto;
+}
+
+div.main {
+    /* border: 1px solid red; */
+    width: 800px;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-evenly; */
+}
+
+
+div.wlan,
+div.probing {
+    box-shadow: 0px 1px 5px 1px #c0c0c0;
+    border: 1px solid #c0c0c0;
+    background-color: #ffffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50%;
+    width: 100%;
+    color: #292929;
+    margin-bottom: 20px;
+}
+
+div.wlan h3,
+div.probing h3 {
+    color: #292929;
+    width: 90%;
+    display: block;
+    text-align: left;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ----------Scrolling Table Styles---------- */
+div.scrolling {
+    box-shadow: 0px 0px 1px 0px #555555;
+    width: 90%;
+    overflow-y: auto;
+    height: 80%;
+    background-color: #f5f5f5;
+}
+
+div.scrolling table {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+div.scrolling table th,
+div.scrolling table td {
+    padding: 8px;
+}
+
+div.scrolling table thead th {
+    background-color: #445eaa;
+    position: sticky;
+    top: 0;
+    color: #f5f5f5;
+    height: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0px 10px 10px;
+}
+
+div.scrolling table tbody tr {
+    background-color: #f5f5f5;
+    /* border-bottom: 1px solid #555555; */
+}
+
+div.scrolling table tbody tr:hover {
+    background-color: #555555;
+    color: #f5f5f5;
+}
+
+div.scrolling table tbody .grey-row {
+    background-color: #dddddd;
+}
+
+/* ----------Footer Styles---------- */
+div.footer {
+    width: 100%;
+    height: 4%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+div.footer-links {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* padding-bottom: 10px; */
+}
+
+div.footer-links a {
+    text-decoration: none;
+    color: #445eaa;
+    /* border-bottom: 1px solid #445eaa; */
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+div.footer-links a:hover {
+    cursor: pointer;
+    color: #03123f;
+    border-bottom: 1px solid #03123f;
+}
